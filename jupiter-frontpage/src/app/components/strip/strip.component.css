@@ -1,0 +1,24 @@
+.strip-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.strip-card {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+.strip-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.strip-title {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}

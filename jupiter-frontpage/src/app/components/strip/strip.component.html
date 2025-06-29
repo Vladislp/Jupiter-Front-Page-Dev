@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <title>Content Strip</title>
+</head>
+  <body>
+    <!-- strip.component.html -->
+    <section *ngIf="strip?.header && strip?.data?.length" class="strip">
+      <header class="strip-header">
+        <h2>{{ strip.header }}</h2>
+      </header>
+
+      <div class="strip-container">
+        <article 
+          class="strip-card" 
+          *ngFor="let item of strip.data"
+          [attr.aria-label]="item.heading"
+        >
+        <img
+          *ngIf="item.verticalPhotos?.[0]?.photoUrlBase"
+          referrerpolicy="no-referrer"
+          [src]="item.verticalPhotos[0].photoUrlBase"
+          [alt]="item.heading || 'Video thumbnail'"
+          class="strip-image"
+        />
+          <p class="strip-title">{{ item.heading }}</p>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
