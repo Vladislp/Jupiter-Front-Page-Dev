@@ -1,2 +1,4 @@
-<h2>Raw API Dump:</h2>
-<pre>{{ frontPageData | json }}</pre>
+<app-strip
+  *ngFor="let strip of frontPageData?.data?.category?.frontPage"
+  [strip]="strip">
+</app-strip>
