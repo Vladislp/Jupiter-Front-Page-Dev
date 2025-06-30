@@ -14,8 +14,6 @@ This is a front-page implementation for [jupiter.err.ee](https://jupiter.err.ee)
 
 🔹 Lazy-loaded images from ERR API
 
-🔹 Hidden arrows at scroll edges
-
 🔹 Custom styling and theme similar to Jupiter
 
 ---
