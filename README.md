@@ -7,10 +7,15 @@ This is a front-page implementation for [jupiter.err.ee](https://jupiter.err.ee)
 ## Features
 
 🔹 Horizontal scrollable program strips
+
 🔹 Arrow navigation with scroll snapping
+
 🔹 Responsive layout using Flexbox
+
 🔹 Lazy-loaded images from ERR API
+
 🔹 Hidden arrows at scroll edges
+
 🔹 Custom styling and theme similar to Jupiter
 
 ---
