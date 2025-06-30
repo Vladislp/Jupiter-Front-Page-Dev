@@ -30,10 +30,11 @@ This is a front-page implementation for [jupiter.err.ee](https://jupiter.err.ee)
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/err-jupiter-frontpage.git
-cd err-jupiter-frontpage
+git clone https://github.com/Vladislp/Jupiter-Front-Page-Dev.git
+cd Jupiter-Front-Page-Dev/
+cd jupiter-frontpage/
 npm install
-ng serve
+ng serve --open
 ```
 
 ## API Integration
