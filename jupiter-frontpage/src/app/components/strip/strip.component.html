@@ -17,16 +17,29 @@
     <button class="arrow left" (click)="scrollLeft()">&#10094;</button>
 
     <div class="strip-container" #scrollContainer>
-      <article class="strip-card" *ngFor="let item of strip.data" [attr.aria-label]="item.heading">
+    <article
+      class="strip-card"
+      *ngFor="let item of strip.data"
+      [attr.aria-label]="item.heading"
+    >
+      <a
+        *ngIf="item.canonicalUrl"
+        [href]="item.canonicalUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           *ngIf="item.verticalPhotos?.[0]?.photoUrlBase"
           [src]="item.verticalPhotos[0].photoUrlBase"
           [alt]="item.heading || 'Video thumbnail'"
           class="strip-image"
+          loading="lazy"
           referrerpolicy="no-referrer"
         />
-        <p class="strip-title">{{ item.heading }}</p>
-      </article>
+      </a>
+      <p class="strip-title">{{ item.heading }}</p>
+    </article>
+
     </div>
 
     <button class="arrow right" (click)="scrollRight()">&#10095;</button>
